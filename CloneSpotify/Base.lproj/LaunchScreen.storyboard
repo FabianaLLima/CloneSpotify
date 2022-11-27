@@ -16,37 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Spotify_Icon_RGB_Green" translatesAutoresizingMaskIntoConstraints="NO" id="tmj-cy-On8">
-                                <rect key="frame" x="107" y="244" width="200" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify_Icon_RGB_Green" translatesAutoresizingMaskIntoConstraints="NO" id="xZ8-q1-SX3">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="12p-xs-DNV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="786" id="6LK-t4-04J"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="5" id="GN8-3R-ktv"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="6" id="ilf-FP-c1A"/>
-                                    <constraint firstAttribute="height" constant="128" id="jvY-gS-Epd"/>
-                                    <constraint firstAttribute="width" constant="240" id="sSp-rf-AgD"/>
+                                    <constraint firstAttribute="height" constant="100" id="cHp-oZ-94T"/>
+                                    <constraint firstAttribute="width" constant="100" id="fls-nB-Ofp"/>
                                 </constraints>
-                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="9Ex-Ev-TU0"/>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="C8A-bw-nfC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmj-cy-On8" secondAttribute="trailing" constant="16" id="Fsy-on-alT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tmj-cy-On8" secondAttribute="bottom" id="PQz-1q-jIZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmj-cy-On8" secondAttribute="trailing" constant="10" id="QZD-Ra-9q1"/>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cId-iS-Z0P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tmj-cy-On8" secondAttribute="trailing" constant="5" id="e9b-TJ-6c5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tmj-cy-On8" secondAttribute="bottom" id="iba-wg-fnQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tmj-cy-On8" secondAttribute="bottom" constant="5" id="jTM-Pe-tVg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tmj-cy-On8" secondAttribute="bottom" constant="16" id="vHw-SO-21w"/>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="x73-CQ-DCI"/>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xGr-42-ntS"/>
-                            <constraint firstItem="tmj-cy-On8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zBu-kw-hVO"/>
+                            <constraint firstItem="xZ8-q1-SX3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gMo-eU-aFl"/>
+                            <constraint firstItem="xZ8-q1-SX3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="w2Q-GG-E0l"/>
                         </constraints>
                         <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                     </view>
