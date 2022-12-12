@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bhe-uq-VEh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yvE-UG-PAm">
+            <objects>
+                <navigationController id="Bhe-uq-VEh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ixp-7z-qKO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I6B-Ux-tI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0V-VI-x91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2533" y="-1485"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -195,6 +211,9 @@
                                         <state key="normal" title="Entrar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="zgF-B0-3oS" kind="presentation" modalPresentationStyle="fullScreen" id="1Np-Mu-ZxG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -217,6 +236,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pcb-hN-Pzu" secondAttribute="trailing" constant="14" id="zLv-dP-RRg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="40O-OQ-ngR"/>
                     <connections>
                         <outlet property="entrar" destination="GrD-Wy-z2F" id="9Oe-Qm-wXl"/>
                         <outlet property="subscribe" destination="AD9-du-phw" id="wJn-Hp-cmC"/>
@@ -224,12 +244,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1268" y="-1501"/>
+            <point key="canvasLocation" x="-1696" y="-1485"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="l12-si-Fgp">
             <objects>
-                <viewController id="zgF-B0-3oS" sceneMemberID="viewController">
+                <viewController id="zgF-B0-3oS" customClass="SecondViewController" customModule="CloneSpotify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ba6-vi-RXC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -357,10 +377,14 @@
                             <constraint firstItem="GOU-gt-Dro" firstAttribute="centerY" secondItem="g4K-HH-MTo" secondAttribute="centerY" id="vCE-es-8B6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lt9-XP-edU"/>
+                    <connections>
+                        <outlet property="dismissPressed" destination="g4K-HH-MTo" id="pdI-gd-lJi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyO-SF-QYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-520.28985507246375" y="-1499.3303571428571"/>
+            <point key="canvasLocation" x="-914.49275362318849" y="-1485.2678571428571"/>
         </scene>
     </scenes>
     <resources>

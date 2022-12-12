@@ -18,7 +18,14 @@ class ViewController: UIViewController {
         let view = UIView()
         view.layer.borderColor = UIColor.lightGray.cgColor
         
+        
        // google.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+
     }
 
 }
